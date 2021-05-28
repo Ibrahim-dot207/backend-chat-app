@@ -4,8 +4,11 @@
   "description": "chat-backend",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"node server/index.js",
+    "backend":"nodemon server/index.js",
+    "frontend":"npm run start --prefix serverless-database-app",
+    "dev":"concurrently\"npm run backend\"\"npm run start --prefixserverless-database-app\""
+    
   },
   "author": "Ibrahim Abdul Kadiri",
   "license": "ISC",
