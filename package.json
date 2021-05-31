@@ -4,17 +4,17 @@
   "description": "chat-backend",
   "main": "index.js",
   "scripts": {
-    "start":"node server/index.js",
-    "backend":"nodemon server/index.js",
-    "frontend":"npm run start --prefix serverless-database-app",
-    "dev":"concurrently\"npm run backend\"\"npm run start --prefixserverless-database-app\""
-    
+    "start": "nodemon node index.js",
+    "test": "echo\"Error:no test specified\"&& exit 1"
   },
   "author": "Ibrahim Abdul Kadiri",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "jwks-rsa": "^2.0.3",
     "nodemon": "^2.0.7",
     "socket.io": "^4.1.2"
   }
